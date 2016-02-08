@@ -34,7 +34,7 @@ def addParentsToQueue(state, queue, explored):
 		if parent not in explored:
 			queue.put(parent)
 
-def bfsSearch(board):
+def solve(board):
 	exploredDict = dict()
 	frontier = Queue.Queue()
 	frontier.put(board)
@@ -80,4 +80,4 @@ def bfsSearch(board):
 
 	return exploredDict[board]
 
-print(bfsSearch(3))
+print(solve(20))
